@@ -10,6 +10,8 @@ Created by [Clipper](github.com/clipper-dev)
 
 ## Getting Started
 
+Create a new project using 
+
 First, run the development server:
 
 ```bash
