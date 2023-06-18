@@ -5,8 +5,9 @@ A few extra NMP packages are included to make development easier:
 - recoil
 - framer-motion
 - uuid
-- React Icons
-- React Toastify
+- react-icons
+- react-toastify
+- react-time-ago
 
 Created by [Clipper](github.com/clipper-dev)
 
