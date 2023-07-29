@@ -16,7 +16,7 @@ Created by [Clipper](github.com/clipper-dev)
 Create a new project using the following command:
 
 ```bash
-npx create-next-app@latest my-app -e https://github.com/clipper-dev/nextjs-mongo-starter.git
+npx create-next-app@latest my-app -e https://github.com/clipper-dev/nextjs-mongo-starter
 ```
 
 This will create a new project named **my-app** in its own directory that will be stilised as this template repo.
