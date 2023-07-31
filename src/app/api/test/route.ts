@@ -1,12 +1,13 @@
-  import { connectToDatabase } from "@/lib/mongo";
-  
-  export async function GET(request: Request) {
-    const { db } = await connectToDatabase();
+import { withApiAuthRequired } from "@auth0/nextjs-auth0";
+import { NextResponse } from "next/server";
+
+const withApiAuthRequiredExtended = withApiAuthRequired as any;
+export const GET = withApiAuthRequiredExtended(
+  async (request: NextResponse, response: NextResponse) => {
     try {
-      const test = await db.collection("test").find({}).toArray();
-      return new Response(JSON.stringify(test));
+      return NextResponse.json({ message: "Hello World" }, { status: 200 });
     } catch (error) {
       return new Response("error");
     }
   }
-  
+);
